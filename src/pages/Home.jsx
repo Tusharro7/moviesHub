@@ -5,7 +5,7 @@ import {
   fetchPopularMovies,
   search,
   trendingMovies
-} from '../features/Movies/moviesSlice';
+} from '../features/Movies/movieSlice';
 import { toggleFavorite } from '../features/favorite/favoriteSlice';
 import { useNavigate, useParams, useSearchParams } from 'react-router-dom';
 import Pagination from '../components/Pagination';

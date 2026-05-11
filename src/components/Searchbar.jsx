@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react' 
 import { VscSearchSparkle } from 'react-icons/vsc'
-import { search, clearSearch } from '../features/Movies/moviesSlice'
+import { search, clearSearch } from '../features/Movies/movieSlice'
 import { useDispatch } from 'react-redux'
 import { useNavigate } from 'react-router-dom'
 import api from '../api/tmdb'
