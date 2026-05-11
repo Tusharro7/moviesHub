@@ -1,7 +1,6 @@
 
 import { createAsyncThunk, createSlice } from "@reduxjs/toolkit";
 import moviesServices from "./movies";
-import { AiTwotoneSecurityScan } from "react-icons/ai";
 
 const initialState = {
   movies: [],
@@ -155,7 +154,6 @@ const movieSlice = createSlice({
       .addCase(fetchPopularMovies.fulfilled, (state, action) => {
         state.movies = action.payload.movies;
         state.page = action.payload.page;
-        // state.category = action.payload.category;
         state.totalPages = action.payload.totalPages;
         state.isLoading = false;
       })

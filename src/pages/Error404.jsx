@@ -20,11 +20,7 @@ const Error404 = () => {
           Page Not Found
         </h2>
 
-        {/* <p className="mt-4 text-gray-400 max-w-md mx-auto">
-          Looks like this movie scene does not exist. 
-          The page you are looking for may have been removed
-          or the URL is incorrect.
-        </p> */}
+       
 
         <button
           onClick={() => navigate("/")}

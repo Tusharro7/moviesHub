@@ -13,10 +13,6 @@ const Favorites = () => {
 
   if (favorites.length === 0) {
     return (
-      // <div className="text-white text-center mt-10 text-2xl">
-      //   No Favorite Movies Added
-      // </div>
-
       <div
   className="h-[75dvh] bg-no-repeat bg-contain md:bg-auto 2xl:bg-contain bg-center scale-100 md:scale-110 flex items-end justify-center"
         style={{
@@ -30,34 +26,6 @@ const Favorites = () => {
   }
 
   return (
-    // <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-5 p-5">
-    //   {favorites.map((movie) => (
-    //     <div
-    //       key={`${movie.media_type}-${movie.id}`}
-    //       className="relative bg-zinc-900 rounded-lg overflow-hidden"
-    //     >
-    //       <img
-    //         src={`${movie.poster}`}
-    //         alt={movie.title || movie.name}
-    //         className="w-full h-[30dvh] object-cover"
-    //       />
-
-    //       <button
-    //         onClick={() => dispatch(toggleFavorite(movie))}
-    //         className="absolute top-2 right-2 text-red-500 text-2xl"
-    //       >
-    //         <FaHeart />
-    //       </button>
-
-    //       <div className="p-3">
-    //         <h2 className="text-white text-sm font-semibold">
-    //           {movie.title || movie.name}
-    //         </h2>
-    //       </div>
-    //     </div>
-    //   ))}
-    // </div>
-
     <div className="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-6 w-full py-6 px-6 md:px-16 2xl:px-64">
       {favorites.map((movie) => (
         <div

@@ -1,5 +1,4 @@
 
-
 import api from "../../api/tmdb";
 
 const IMAGE_BASE = "https://image.tmdb.org/t/p/w500";
@@ -28,37 +27,9 @@ const trendingMovies = async (page) => {
   };
 }
 
-
-// const fetchPopularMovies = async (page, type , category) => {
-// const fetchPopularMovies = async (page,  category) => {
-//   console.log("Service page:", page,  category);
-
-//   // const response = await api.get(`/movie/${category}`,
-//   const response = await api.get(`${category}`,
-//     {
-//       params: {
-//         page
-//       }
-//     });
-//   console.log(response.data.results)
-//   return {
-//     page: response.data.page,
-//     totalPages: response.data.total_pages,
-//     movies: response.data.results.map((movie) => ({
-//       id: movie.id,
-//       title: movie.title,
-//       type: movie.media_type,
-//       poster: movie.poster_path
-//         ? IMAGE_BASE + movie.poster_path
-//         : "/no-image.png",
-//     })),
-//   };
-// };
-
 const fetchPopularMovies = async (page, type, movietype1) => {
   console.log("Service page:", page, type, movietype1);
 
-  // const response = await api.get(`/movie/${category}`,
   const response = await api.get(`/${type}/${movietype1}`,
     {
       params: {
@@ -87,7 +58,6 @@ const fetchMovieDetails = async ({ id, type }) => {
     id, type
   );
 
-  // const response = await api.get(`/movie/${movie_id}`);
   const response = await api.get(`/${type}/${id}`);
   return {
     BgImage: response.data.backdrop_path

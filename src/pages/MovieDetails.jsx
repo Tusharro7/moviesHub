@@ -9,7 +9,7 @@ import {
   fetchSimilarMovies,
   resetmovie,
 
-} from "../features/movies/moviesSlice";
+} from "../features/Movies/moviesSlice";
 import { GiFilmProjector } from "react-icons/gi";
 const MovieDetails = () => {
   const IMAGE_BASE = "https://image.tmdb.org/t/p/w500";
@@ -208,8 +208,6 @@ const MovieDetails = () => {
                     className="relative h-[45dvh] w-[40dvw] md:w-1/3 lg:w-[16dvw] shrink-0 rounded-xl overflow-hidden cursor-pointer"
                     onClick={() =>
                       navigate(`/details/${type}/${movie.id}`)
-                      // navigate(`/`)
-
                     }
                   >
                     <img
@@ -237,5 +235,4 @@ const MovieDetails = () => {
     </>
   );
 };
-
 export default MovieDetails;
