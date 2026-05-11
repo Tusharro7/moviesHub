@@ -7,9 +7,8 @@ import {
   fetchMovieImages,
   fetchMovieVideos,
   fetchSimilarMovies,
-  resetmovie,
-
 } from "../features/Movies/moviesSlice";
+import {resetmovie} from "../features/Movies/moviesSlice"
 import { GiFilmProjector } from "react-icons/gi";
 const MovieDetails = () => {
   const IMAGE_BASE = "https://image.tmdb.org/t/p/w500";
